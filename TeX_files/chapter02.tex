@@ -1,0 +1,236 @@
+
+
+%=skak version 1.5
+\chapter*{Who Strikes First?}
+
+
+
+%\makeatletter
+%\def\afterno{\hspace{1ex}}
+%\def\beforeno{\hspace{6ex}}
+%\def\beforeb{\beforeno\the\move\afterno\dots.\hspace{5ex}}
+
+%\renewcommand*\ECO[1]{\def\@eco{\ (#1)}}
+%\renewcommand*\whiteelo[1]{\def\@welo{\ (#1)}}
+%\renewcommand*\blackelo[1]{\def\@belo{\ (#1)}}
+%\renewcommand*\makegametitle{\newgame
+%\begin{center}
+%\noindent\textbf{\wname}\@welo\ -- \textbf{\bname}\@belo\\
+%\noindent\textit{\@tourn}\\
+%\noindent\@opening\@eco
+%\end{center}}
+%\makeatother
+
+%\whitename{Kupper}\whiteelo{1234}
+%\blackname{Tal}\blackelo{4321}
+%\chessevent{Zurich - 1959}
+%\ECO{B96n}
+%\chessopening{Sicilian Najdorf, Polugaevsky Var}
+
+
+
+
+%\makegametitle
+
+\newchessgame[id=main,white=Kupper,black=Tal,result=0--1,event=Zurich,date=1959]
+
+\mainline[style=styleC,level=1]{1. e4}
+%
+The struggle for the center is not always conducted with a
+symmetrical Pawn formation. There are other popular answers to
+\xskakset{moveid=1w}%
+$\xskakget{opennr}$%
+\xskakget{san}.
+One of them is the Sicilian Defense.
+%
+\mainline{1... c5}
+%
+The characteristic Sicilian move.
+%
+\mainline{2. Nf3}
+%
+One usually develops the g\figsymbol{N} when his e\figsymbol{p} is not under attack.
+%
+\mainline{2... d6}
+%
+\hidemoves{3. d4}
+%
+%g\figsymbol{N}.
+%
+Now after developing the White-squared Bishop and castling,
+White could decide where to put his Black-squared Bishop, but in
+practice he prefers to open the center first. Of course, a good
+preparatory move is %
+\newchessgame[newvar=main,id=variation]%
+\mainline[level=2]{3. c3,} so as after \wmove{d4}
+to recapture with a \figsymbol{p}. But after \mainline{3... Nf6}
+defending the e\figsymbol{p} is awkward (\mainline{4. Qc2? e5!}).
+
+\resumechessgame[id=main,moveid=3w]
+
+\mainline[level=1]{3. d4} 
+
+Now Black must exchange his c\figsymbol{p}.
+
+\mainline{3... cxd4}
+
+The \figsymbol{Q} does not recapture the \figsymbol{p} because she would be
+attacked by enemy pieces brought into play with tempo.
+
+\mainline{4. Nxd4}
+
+Therefore, the \figsymbol{N} takes the Pawn.
+
+\mainline{4... Nf6}
+
+To attack the enemy e\figsymbol{p}.
+
+\mainline{5. Nc3}
+
+%\hidemoves{5... a6}
+
+Where is Black to place his black-squared Bishop? He could
+fianchettoe it 
+(\mainline[level=2]{5... g6}, \hidemoves{6. g3}\mainline{6... Bg7}, \hidemoves{7. Bg2} \mainline{7... O-O} -- the Dragon Variation)
+or
+after \bmove{e6} (The Scheveningen Variation) or \bmove{e5}
+(The Boleslavsky System) place it on e7.
+All these are fully possible, but Black first decides to keep White pieces from b5
+by moving a Queenside Pawn.
+
+\resumechessgame[id=main,moveid=5b]
+\mainline[level=1]{5... a6}
+
+\hidemoves{6. Bg5}
+
+\xskakset{level=2}
+White has a choice of developing continuations
+(\variation{6.Be2}, \variation{6.Bc4}, \variation{6.f4}, \variation{6.b3})
+but chooses an idea involved with Queenside castling.
+
+\resumechessgame[id=main,moveid=6w]
+
+\mainline[level=1]{6. Bg5}
+%
+Continuing his plan.
+%
+\mainline{6... e6}
+%
+Often played here is \hidemoves{7. Qd2}\variation[invar]{7. Qd2}, but this can be met by
+the tactical \hidemoves{7... h6}\variation{7... h6 8. Bh4 Nxe4!}
+\resumechessgame[id=main,moveid=7w]%
+Therefore, \hidemoves{7. Qf3}\variation{7. Qf3}
+comes into consideration (to enable Queenside castling).
+But first White stops to place another Pawn in the center.
+%
+\resumechessgame[id=main,moveid=7w]
+\mainline[level=1]{7. f4}
+
+\chessboard[tinyboard]
+
+\hidemoves{7... b5}
+Is there a threat of \variation[invar]{8. e5}? No, this is not true,
+as after \hidemoves{8. e5}\variation{8... dxe5 9. fxe5}\hidemoves{8... dxe5 9. fxe5} may be met by
+\variation{9... Qa5} and \variation{9... Qc7}
+and even \variation{9... h6}.  This continuation is more dangerous 
+after \resumechessgame[id=main,moveid=7b]\variation{7... Nc6 8. Nxc6 bxc6}, but \variation{7... Be7} meets the threat.
+The move \variation{7... Qb6}\hidemoves{7... Qb6} is involved with a Pawn sacrifice variation 
+(\variation{8. Qd2 Qxb2 9. Rb1 Qa3 \xskakcomment{ and now} 10. e5 Nfd7 11. f5}).  
+Thus Black does not need to defend e5 by \bmove{Nc6}.
+%
+\resumechessgame[id=main,moveid=7b]
+\mainline[level=1]{ 7... b5} 
+%
+Black continues aggressively.
+%
+\mainline{8. Qf3}
+
+\xskakset{level=2}
+White defends his e\figsymbol{p} against a threat of \bmove{b4}.
+
+\mainline[level=1]{8... Bb7}
+
+\xskakset{level=2}
+Hoping to induce \wmove{a3} but after Queenside castling, the \figsymbol{p} on \wmove{a3}
+facilitates Black opening play on
+the Queenside by \bmove{b4}.  So White protects his e\figsymbol{p} with a piece.
+
+\mainline[level=1]{9. Bd3}
+
+Best.
+
+\mainline{9...Be7}
+
+Continuing his development.
+
+\mainline{10. O-O-O}
+
+Continuing his plan.
+
+\mainline{10... Qb6}
+
+\mainline{11. Rhe1}
+
+Developing and centralizing the White \movecomment{R.}
+
+\mainline{11... Nbd7}
+
+\mainline{12. Nce2}
+
+\mainline{12... Nc5}
+
+\mainline{13. Bxf6}
+
+\mainline{13... Bxf6}
+
+\mainline{14. g4}
+
+\showboard
+
+\mainline{14... Na4}
+
+\mainline{15. c3}
+
+\mainline{15... b4}
+
+\mainline{16. Bc2}
+
+\mainline{16... Nxb2} 
+
+\mainline{17. Kxb2}
+
+\mainline{17... bxc3+}
+
+\mainline{18. Kxc3}
+
+\showboard
+
+\mainline{18... O-O}
+
+\mainline{19. Rb1}
+
+\mainline{19... Qa5+}
+
+\mainline{20. Kd3}
+
+\mainline{20... Rac8}
+
+\mainline{21. Qf2}
+
+\mainline{21... Ba8}
+
+\chessboard
+
+\mainline{22.	Rb3}
+
+\mainline{22... e5}
+
+\mainline{23.	g5}
+
+\mainline{23... exd4}
+
+\mainline{24.	Nxd4}
+
+\mainline{24... Bxd4}
+
+\showboard

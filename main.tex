@@ -1,0 +1,38 @@
+\documentclass[letterpaper,twocolumn]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{graphicx}
+
+\usepackage{geometry}
+\geometry{letterpaper}
+\geometry{margin=1in}
+
+\usepackage{xskak}
+
+\usepackage{ragged2e}\RaggedRight
+\setlength{\parindent}{0pt}
+
+\usepackage{microtype}
+
+\begin{document}
+
+\author{Soviet Master Abramov}
+\title{Move By Move}
+\date{June 1973}
+
+\include{./TeX_files/titlepage}
+
+\selectlanguage{english}
+
+\frontmatter
+\tableofcontents
+
+\mainmatter
+%\include{./TeX_files/chapter01}
+\include{./TeX_files/chapter02}
+
+\backmatter
+% bibliography, glossary and index would go here.
+
+\end{document}

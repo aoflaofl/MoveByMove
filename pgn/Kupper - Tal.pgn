@@ -1,0 +1,52 @@
+[Event "Zuerich"]
+[Site "Zuerich"]
+[Date "1959.??.??"]
+[Round "?"]
+[White "Kupper, Josef"]
+[Black "Tal, Mihail"]
+[Result "0-1"]
+[ECO "B96"]
+[PlyCount "48"]
+
+
+	   1.	e4    	c5    
+	   2.	Nf3   	d6    
+	   3.	d4    	cxd4  
+	   4.	Nxd4  	Nf6   
+	   5.	Nc3   	a6    
+	   6.	Bg5   	e6    
+	   7.	f4    	
+    ( 7.Be2 )
+
+	   7.	...        	b5    
+	   8.	Qf3   	
+    ( 8.e5 dxe5 9.fxe5 Qc7 10.exf6 Qe5+ 11.Be2 Qxg5 12.Qd3 
+        ( 12.O-O )
+    )
+
+	   8.	...        	Bb7   
+	   9.	Bd3   	Be7   
+	  10.	O-O-O 	Qb6   
+	  11.	Rhe1  	
+    ( 11.f5 )
+
+	  11.	...        	Nbd7  
+	  12.	Nce2  	Nc5   
+	  13.	Bxf6  	
+    ( 13.Ng3 )
+
+	  13.	...        	Bxf6  
+	  14.	g4    	Na4   
+	  15.	c3    	b4    
+	  16.	Bc2   	Nxb2  
+	  17.	Kxb2  	bxc3+ 
+	  18.	Kxc3  	O-O   
+	  19.	Rb1   	Qa5+  
+	  20.	Kd3   	Rac8  
+	  21.	Qf2   	Ba8   
+	  22.	Rb3   	e5    
+	  23.	g5    	exd4  
+	  24.	Nxd4  	Bxd4  
+
+0-1
+
