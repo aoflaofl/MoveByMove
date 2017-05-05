@@ -1,36 +1,50 @@
-\documentclass[letterpaper,twocolumn]{book}
-\usepackage[T1]{fontenc}
+\documentclass[letterpaper]{memoir}
+
+\usepackage[l2tabu,orthodox]{nag}
+
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
-\usepackage{graphicx}
+\usepackage[T1]{fontenc}
 
-\usepackage{geometry}
-\geometry{letterpaper}
-\geometry{margin=1in}
+
+\usepackage[letterpaper,margin=1in]{geometry}
+\pagestyle{empty}
+
+
+\usepackage{ragged2e}
+\RaggedRight
+\usepackage{microtype}
+\setlength{\parindent}{0pt}
+
+\RequirePackage{ellipsis}
+\renewcommand{\ellipsisgap}{0.25em}
+
+\usepackage{multicol}
 
 \usepackage{xskak}
 
-\usepackage{ragged2e}\RaggedRight
-\setlength{\parindent}{0pt}
-
-\usepackage{microtype}
-
 \begin{document}
 
-\author{Soviet Master Abramov}
-\title{Move By Move}
-\date{June 1973}
-
-\include{./TeX_files/titlepage}
 
 \selectlanguage{english}
 
-\frontmatter
-\tableofcontents
+%\frontmatter
+%\tableofcontents
 
 \mainmatter
+
+\include{./TeX_files/titlepage}
+
+\pagebreak
+
+\include{./TeX_files/publisherpage}
+
+\pagebreak
+
+\begin{multicols}{2}
 %\include{./TeX_files/chapter01}
 \include{./TeX_files/chapter02}
+\end{multicols}
 
 \backmatter
 % bibliography, glossary and index would go here.
